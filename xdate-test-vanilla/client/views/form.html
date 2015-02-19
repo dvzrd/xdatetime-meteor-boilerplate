@@ -1,0 +1,18 @@
+<head>
+  <title>xdate-test-vanilla</title>
+</head>
+
+<body>
+  <h1>xdate test without semantic ui</h1>
+  {{> form}}
+</body>
+
+<template name="form">
+  {{#autoForm collection='Test' class='ui form' id='testForm' type='insert' validation='keyup'}}
+    {{#with date}}
+      {{> afQuickField type='xdatetime' formid='testForm' name='issued' format='MM/DD/YYYY'}}
+      {{> afQuickField type='xdatetime' formid='testForm' name='expires' format='MM/DD/YYYY'}}
+    {{/with}}
+    <button type="submit">Save</button>
+  {{/autoForm}}
+</template>
