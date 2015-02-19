@@ -1,0 +1,66 @@
+// Main styles
+
+.xwidget.xdatetime {
+	position: relative;
+
+	.ui.icon.input {
+
+		.show-calendar {
+			cursor: pointer;
+
+			&:hover,
+			&:focus {
+				color: #3b83c0;
+			}
+		}
+	}
+
+	.xdatetime-popover {
+		width: 100%;
+		border: 1px solid #C5C5C5;
+		border-radius: 0.2857rem;
+
+		div {
+			display: inline-block;
+			padding: 0.5em;
+			width: 100%;
+			text-align: center;
+
+			&:first-child {
+				background: #C5C5C5;
+			}
+
+			&:last-child {
+				display: none;
+			}
+
+			span {
+				display: none;
+
+				&.xdatetime-day {
+					display: inline-block;
+					float: left;
+					width: 14.25%;
+					padding: 0.5em 0 0.5em 0.25em;
+					border-radius: 0.2857rem;
+
+					&.xcursive {
+						color: #C5C5C5;
+					}
+
+					&.xtoday {
+						background: #e07b53;
+						color: #fff;
+						text-decoration: none;
+					}
+
+					&:hover,
+					&:focus {
+						background: #3b83c0;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
